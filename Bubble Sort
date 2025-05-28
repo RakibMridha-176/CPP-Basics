@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+    int n, i, j, t;
+    cout<<"Enter an array size: ";
+    cin>>n;
+
+    int arr[n];
+    cout<<"Input array elements:- ";
+    for(i=0; i<n; i++){
+        cin>>arr[i];
+    }
+
+    for(i=1; i<n; i++){
+        for(j=0; j<(n-i); j++){
+            if(arr[j] > arr[j+1]){
+              t = arr[j];
+              arr[j] = arr[j+1];
+              arr[j+1] = t;
+
+            }
+        }
+    }
+    for(i= 0; i <n;i++){
+        cout<<arr[i];
+    }
+    return 0;
+}
