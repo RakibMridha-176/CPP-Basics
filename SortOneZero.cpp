@@ -1,13 +1,7 @@
 #include<iostream>
 using namespace std;
 
-// int getUnique(int arr[], int n){
-//     int ans = 0;
-//     for(int i = 0; i < n; i++){
-//         ans = ans^arr[i];
-//     }
-//     return ans;
-// }
+
  void sortzeroone(int arr[], int n){
     int countzero = 0;
     int countone = 0;
