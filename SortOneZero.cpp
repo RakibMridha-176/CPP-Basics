@@ -13,12 +13,22 @@ using namespace std;
             countone++;
         }
     }
-    int i, j;
-    for(i = 0; i < countzero; i++){
-        arr[i] = 0;
+    // int i, j;
+    // for(i = 0; i < countzero; i++){
+    //     arr[i] = 0;
+    // }
+    // for(j = i; j <n; j++){
+    //     arr[j]= 1;
+    // }
+
+   int index = 0;
+    while(countzero--){
+        arr[index] = 0;
+        index++;
     }
-    for(j = i; j <n; j++){
-        arr[j]= 1;
+    while(countone--){
+        arr[index]= 1;
+        index++;
     }
  }
 
